@@ -25,9 +25,9 @@ const app = express();
 
 // middleware
 app.use(cors());
-// app.use(express.json());
+app.use(express.json());
 // app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, './frontend/dist')))
+app.use(express.static(path.join(__dirname, './dist')))
 
 
 
